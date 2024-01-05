@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/05 12:52:02 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/05 17:16:03 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,9 @@ void	parsing_more_argv(char **argv);
 int is_nbr_or_space_or_neg(char c);
 int	two_nbr_in_str(char *str);
 int	is_nbr(char c);
+int	no_nbr_in_str(char *str);
 int	ft_strlen(char *str);
+
 
 /*error_msg*/
 void	msg_error_exit(void);

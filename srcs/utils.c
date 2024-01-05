@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:50:40 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/05 14:10:16 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/05 17:15:46 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,8 @@ int	two_nbr_in_str(char *str)
 			i++;
 		if (str[i] == '-')
 		{
-			if (str[i + 1] == ' ' || str[i + 1] == '\0' || str[i + 1] == '-')
+			if (str[i + 1] == ' ' || str[i + 1] == '\0' || str[i + 1] == '-'
+				|| str[i + 1] == '0')
 				return (-1);
 			i++;
 		}
@@ -62,6 +63,25 @@ int	two_nbr_in_str(char *str)
 		return (1);
 	return (0);
 }
+
+int	no_nbr_in_str(char *str)
+{
+	int	i;
+	int	verif;
+
+	i = 0;
+	verif = 0;
+	while (str[i])
+	{
+		if (is_nbr(str[i]) == 1)
+			verif++;
+		i++;
+	}
+	if (verif == 0)
+		return (-1);
+	return (0);
+}
+
 
 int	ft_strlen(char *str)
 {

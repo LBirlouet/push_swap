@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:54:21 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/05 11:37:22 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/05 17:17:38 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,29 @@ void	parsing_one_argv(char *argv)
 
 void	parsing_more_argv(char **argv)
 {
+	int i;
+	int j;
+
+	i = 1;
+	while (argv[i])
+	{
+		j = 0;
+		if (argv[i][j])
+		{
+			while (argv[i][j] == ' ')
+				j++;
+			if ((argv[i][j] == '-' && is_nbr(argv[i][j + 1]) == -1))
+				msg_error_exit();
+			if (argv[i][j] == '-')
+				j++;
+			while (is_nbr(argv[i][j]) == 1)
+				j++;
+			while (argv[i][j] == ' ')
+				j++;
+			if (j != (ft_strlen(argv[i])) || no_nbr_in_str(argv[i]) == -1)
+				msg_error_exit();
+		}
+		i++;
+	}
 	printf("plusieurs arg\n");
-	(void)argv;
 }
