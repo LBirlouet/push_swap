@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
+/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/05 17:16:03 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/06 14:40:00 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,12 @@
 
 typedef struct s_stack_A {
 	int	*tab_A;
+	int size_stack_A;
 }				t_stack_A;
 
 typedef struct s_stack_B {
 	int	*tab_B;
+	int size_stack_B;
 }				t_stack_B;
 
 typedef struct s_push_swap {
