@@ -3,12 +3,13 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
+#    By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/05 11:29:29 by lbirloue         ###   ########.fr        #
+#    Updated: 2024/01/07 11:52:18 by lucasbirlou      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 NAME		=	push_swap
 
@@ -20,40 +21,41 @@ INCLUDES	=	includes/push_swap.h
 
 SRCS		=	srcs/main.c \
 				srcs/utils.c \
-				srcs/arg_parsing.c \
+				srcs/parsing/arg_parsing.c \
+				srcs/parsing/utils_parsing.c \
 				srcs/error_msg.c \
-
 
 FT_PRINTF		= libftprintf.a
 
 FT_PRINTF_PATH	= ft_printf
 
-OBJS = $(SRCS:.c=.o)
+OBJ_DIR		=	objets
+OBJS		=	$(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 
-
-%.o : %.c
+${OBJ_DIR}/%.o : %.c
+	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
+all : $(OBJ_DIR) $(NAME)
 
-all : $(NAME) 
+$(OBJ_DIR):
+	@mkdir -p $(OBJ_DIR)
+
 $(NAME) : $(OBJS) ${FT_PRINTF}
 	$(CC) $(OBJS) $(CFLAGS) -o ${NAME} ${FT_PRINTF}
-
 
 ${FT_PRINTF}:
 	${MAKE} -C ${FT_PRINTF_PATH}
 	mv ${FT_PRINTF_PATH}/${FT_PRINTF} .
 
-
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(OBJ_DIR)
 	${MAKE} clean -C ${FT_PRINTF_PATH}
 	${RM} ${FT_PRINTF}
 
 fclean: clean
-	rm -rf $(NAME) 
+	rm -rf $(NAME)
 
 re: fclean all
 
-
-.PHONY:		all clean fclean re
+.PHONY: all clean fclean re

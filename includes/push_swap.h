@@ -6,7 +6,7 @@
 /*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/06 14:40:00 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/07 12:02:45 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,21 @@ typedef struct s_push_swap {
 
 /*main*/
 int 	main(int argc, char **argv);
+
 /*arg_parsing*/
 void	parsing(int argc, char **argv);
 void	parsing_one_argv(char *argv);
 void	parsing_more_argv(char **argv);
+
 /*utils*/
-int is_nbr_or_space_or_neg(char c);
-int	two_nbr_in_str(char *str);
-int	is_nbr(char c);
-int	no_nbr_in_str(char *str);
 int	ft_strlen(char *str);
 
+/*utils_parsing*/
+int	two_nbr_in_str(char *str, int counter, int i);
+int	two_nbr_in_str_2(char *str, int counter);
+int is_nbr_or_space_or_neg(char c);
+int	is_nbr(char c);
+int	no_nbr_in_str(char *str);
 
 /*error_msg*/
 void	msg_error_exit(void);

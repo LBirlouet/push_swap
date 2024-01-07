@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   arg_parsing.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
+/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:54:21 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/05 17:17:38 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/07 11:57:05 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../../includes/push_swap.h"
 
 void	parsing(int argc, char **argv)
 {
@@ -35,7 +35,7 @@ void	parsing_one_argv(char *argv)
 		i++;
 	}
 	i = 0;
-	if (two_nbr_in_str(argv) == -1)
+	if (two_nbr_in_str(argv, 0, 0) == -1)
 		msg_error_exit();
 }
 
