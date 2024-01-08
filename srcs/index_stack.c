@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 11:24:25 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 12:31:46 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 17:43:52 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	index_stack(t_push_swap *push_swap)
 {
 	int	i;
-	int tab_tempo[push_swap->stack_a.size_stack_A];
+	int	tab_tempo[push_swap->stack_a.size_stack_A];
 
 	i = 0;
 	while (i < push_swap->stack_a.size_stack_A)
@@ -42,12 +42,8 @@ int	get_position(t_push_swap *push_swap, int tempo)
 	while (j < push_swap->stack_a.size_stack_A)
 	{
 		if (tempo > push_swap->stack_a.tab_A[j])
-		{
-//			printf("%d > %d\n", tempo, push_swap->stack_a.tab_A[j]);
 			ret++;
-		}
 		j++;
 	}
-//	printf("ret == %d\n", ret);
 	return (ret);
 }

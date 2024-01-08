@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 17:03:59 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 18:37:00 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,10 @@ void	ss(t_push_swap *push_swap);
 
 void	pb(t_push_swap *push_swap);
 void	pa(t_push_swap *push_swap);
+
+void	ra(t_push_swap *push_swap);
+void	rb(t_push_swap *push_swap);
+void	rr(t_push_swap *push_swap);
 
 
 #endif

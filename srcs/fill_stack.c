@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 08:59:47 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 16:25:13 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 17:42:52 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	fill_zero(t_push_swap *push_swap)
 		size--;
 	}
 	push_swap->stack_b.size_stack_B = 0;
-	return;
+	return ;
 }
 
 void	fill_stack_one_arg(t_push_swap *push_swap, char **argv)

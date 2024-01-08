@@ -6,7 +6,7 @@
 #    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/08 17:04:07 by lbirloue         ###   ########.fr        #
+#    Updated: 2024/01/08 18:37:18 by lbirloue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,9 @@ SRCS			=	srcs/main.c \
 					srcs/moves/ss.c \
 					srcs/moves/pa.c \
 					srcs/moves/pb.c \
+					srcs/moves/ra.c \
+					srcs/moves/rb.c \
+					srcs/moves/rr.c \
 					srcs/error_msg.c \
 
 FT_PRINTF		=	libftprintf.a

@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:49:03 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 17:11:11 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 18:38:34 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,17 +48,23 @@ int	main(int argc, char **argv)
 	
 	pb(&push_swap);
 	pb(&push_swap);
-	pa(&push_swap);
-	
+	rr(&push_swap);
 	
 	/*VERIF*/
 	v = 0;
+	printf("A|");
 	while (v < push_swap.stack_a.size_stack_A)
 	{
-		printf("|%d|", push_swap.stack_a.tab_A[v]);
+		printf("%d|", push_swap.stack_a.tab_A[v]);
 		v++;
 	}
-	printf("\n|%d|%d|\n", push_swap.stack_b.tab_B[0], push_swap.stack_b.tab_B[1]);
+	v = 0;
+	printf("\nB|");
+	while (v < push_swap.stack_b.size_stack_B)
+	{
+		printf("%d|", push_swap.stack_b.tab_B[v]);
+		v++;
+	}
 	/*FIN VERIF*/
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 13:05:06 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 16:58:21 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 17:43:08 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	pb(t_push_swap *push_swap)
 {
 	int	tempo;
-	int tempo2;
+	int	tempo2;
 	int	i;
 
 	i = 0;
