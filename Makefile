@@ -6,35 +6,38 @@
 #    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/08 13:05:40 by lbirloue         ###   ########.fr        #
+#    Updated: 2024/01/08 17:04:07 by lbirloue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+NAME			=	push_swap
 
-NAME		=	push_swap
+CC				=	gcc
 
-CC			=	gcc
+CFLAGS			=	-Wall -Wextra -Werror
 
-CFLAGS		=	-Wall -Wextra -Werror
+INCLUDES		=	includes/push_swap.h
 
-INCLUDES	=	includes/push_swap.h
+SRCS			=	srcs/main.c \
+					srcs/fill_stack.c \
+					srcs/parsing_stack.c \
+					srcs/index_stack.c \
+					srcs/utils.c \
+					srcs/parsing_arg/arg_parsing.c \
+					srcs/parsing_arg/utils_parsing.c \
+					srcs/moves/sa.c \
+					srcs/moves/sb.c \
+					srcs/moves/ss.c \
+					srcs/moves/pa.c \
+					srcs/moves/pb.c \
+					srcs/error_msg.c \
 
-SRCS		=	srcs/main.c \
-				srcs/fill_stack.c \
-				srcs/parsing_stack.c \
-				srcs/index_stack.c \
-				srcs/utils.c \
-				srcs/parsing_arg/arg_parsing.c \
-				srcs/parsing_arg/utils_parsing.c \
-				srcs/moves/pb.c \
-				srcs/error_msg.c \
+FT_PRINTF		=	libftprintf.a
 
-FT_PRINTF		= libftprintf.a
+FT_PRINTF_PATH	=	ft_printf
 
-FT_PRINTF_PATH	= ft_printf
-
-OBJ_DIR		=	objets
-OBJS		=	$(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
+OBJ_DIR			=	objets
+OBJS			=	$(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 
 ${OBJ_DIR}/%.o : %.c
 	@mkdir -p $(dir $@)
