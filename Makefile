@@ -6,7 +6,7 @@
 #    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/08 11:24:55 by lbirloue         ###   ########.fr        #
+#    Updated: 2024/01/08 13:05:40 by lbirloue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRCS		=	srcs/main.c \
 				srcs/utils.c \
 				srcs/parsing_arg/arg_parsing.c \
 				srcs/parsing_arg/utils_parsing.c \
+				srcs/moves/pb.c \
 				srcs/error_msg.c \
 
 FT_PRINTF		= libftprintf.a

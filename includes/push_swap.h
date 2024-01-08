@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 11:29:27 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 12:00:58 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,7 @@ void	parsing_stack(t_push_swap *push_swap);
 
 /*index_stack*/
 void	index_stack(t_push_swap *push_swap);
+int		get_position(t_push_swap *push_swap, int i);
 
 
 
