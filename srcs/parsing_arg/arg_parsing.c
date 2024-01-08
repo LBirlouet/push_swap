@@ -3,28 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   arg_parsing.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
+/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:54:21 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/07 11:57:05 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/08 10:23:15 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-void	parsing(int argc, char **argv)
+void	parsing_arg(t_push_swap *push_swap, char **argv)
 {
-	if (argc == 1)
+	if (push_swap->argc == 1)
 		msg_error_exit();
-	else if(argc == 2)
-		parsing_one_argv(argv[1]);
-	else if (argc > 2)
+	else if (push_swap->argc == 2)
+		parsing_one_argv(push_swap, argv[1]);
+	else if (push_swap->argc > 2)
 		parsing_more_argv(argv);
 }
 
-void	parsing_one_argv(char *argv)
+void	parsing_one_argv(t_push_swap *push_swap, char *argv)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	printf("arg == |%s|\n", argv);
@@ -35,14 +35,14 @@ void	parsing_one_argv(char *argv)
 		i++;
 	}
 	i = 0;
-	if (two_nbr_in_str(argv, 0, 0) == -1)
+	if (two_nbr_in_str(push_swap, argv, 0, 0) == -1)
 		msg_error_exit();
 }
 
 void	parsing_more_argv(char **argv)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	while (argv[i])

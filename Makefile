@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+         #
+#    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/07 11:52:18 by lucasbirlou      ###   ########.fr        #
+#    Updated: 2024/01/08 09:00:15 by lbirloue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,9 +20,10 @@ CFLAGS		=	-Wall -Wextra -Werror
 INCLUDES	=	includes/push_swap.h
 
 SRCS		=	srcs/main.c \
+				srcs/fill_stack.c \
 				srcs/utils.c \
-				srcs/parsing/arg_parsing.c \
-				srcs/parsing/utils_parsing.c \
+				srcs/parsing_arg/arg_parsing.c \
+				srcs/parsing_arg/utils_parsing.c \
 				srcs/error_msg.c \
 
 FT_PRINTF		= libftprintf.a
