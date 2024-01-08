@@ -6,7 +6,7 @@
 #    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/08 09:00:15 by lbirloue         ###   ########.fr        #
+#    Updated: 2024/01/08 11:24:55 by lbirloue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,8 @@ INCLUDES	=	includes/push_swap.h
 
 SRCS		=	srcs/main.c \
 				srcs/fill_stack.c \
+				srcs/parsing_stack.c \
+				srcs/index_stack.c \
 				srcs/utils.c \
 				srcs/parsing_arg/arg_parsing.c \
 				srcs/parsing_arg/utils_parsing.c \

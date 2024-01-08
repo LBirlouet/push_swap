@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 10:24:29 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 11:29:27 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ void	parsing_more_argv(char **argv);
 int		ft_strlen(char *str);
 ssize_t	ft_conv_char_int(char *str, ssize_t ret);
 int		next_nbr(char *str, int i);
+void	free_tabs(t_push_swap *push_swap);	
 
 /*utils_parsing*/
 int		two_nbr_in_str(t_push_swap *push_swap, char *str, int counter, int i);
@@ -68,6 +69,12 @@ void	malloc_stack(t_push_swap *push_swap);
 void	fill_zero(t_push_swap *push_swap);
 void	fill_stack_one_arg(t_push_swap *push_swap, char **argv);
 void	fill_stack_more_arg(t_push_swap *push_swap, char **argv);
+
+/*parsing_stack*/
+void	parsing_stack(t_push_swap *push_swap);
+
+/*index_stack*/
+void	index_stack(t_push_swap *push_swap);
 
 
 

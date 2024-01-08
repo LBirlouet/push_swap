@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:54:21 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 10:23:15 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:43:51 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	parsing_one_argv(t_push_swap *push_swap, char *argv)
 	int	i;
 
 	i = 0;
-	printf("arg == |%s|\n", argv);
 	while (argv[i])
 	{
 		if (is_nbr_or_space_or_neg(argv[i]) == -1)
@@ -65,5 +64,4 @@ void	parsing_more_argv(char **argv)
 		}
 		i++;
 	}
-	printf("plusieurs arg\n");
 }
