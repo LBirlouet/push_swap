@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 18:37:00 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 18:47:53 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@
 # include <stdio.h>
 
 typedef struct s_stack_a {
-	int	*tab_A;
-	int	size_stack_A;
+	int	*tab_a;
+	int	size_stack_a;
 }				t_stack_a;
 
 typedef struct s_stack_b {
-	int	*tab_B;
-	int	size_stack_B;
+	int	*tab_b;
+	int	size_stack_b;
 }				t_stack_b;
 
 typedef struct s_push_swap {
@@ -40,7 +40,7 @@ typedef struct s_push_swap {
 }				t_push_swap;
 
 /*main*/
-int 	main(int argc, char **argv);
+int		main(int argc, char **argv);
 
 /*arg_parsing*/
 void	parsing_arg(t_push_swap *push_swap, char **argv);
@@ -88,6 +88,5 @@ void	pa(t_push_swap *push_swap);
 void	ra(t_push_swap *push_swap);
 void	rb(t_push_swap *push_swap);
 void	rr(t_push_swap *push_swap);
-
 
 #endif

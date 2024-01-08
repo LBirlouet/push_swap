@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 11:24:25 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 17:43:52 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 18:47:17 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,28 @@
 void	index_stack(t_push_swap *push_swap)
 {
 	int	i;
-	int	tab_tempo[push_swap->stack_a.size_stack_A];
+	int	*tab_tempo;
 
 	i = 0;
-	while (i < push_swap->stack_a.size_stack_A)
+	tab_tempo = malloc(sizeof(int) * push_swap->stack_a.size_stack_a);
+	if (!tab_tempo)
 	{
-		tab_tempo[i] = get_position(push_swap, push_swap->stack_a.tab_A[i]);
+		free(push_swap->stack_a.tab_a);
+		free(push_swap->stack_b.tab_b);
+		msg_error_exit ();
+	}
+	while (i < push_swap->stack_a.size_stack_a)
+	{
+		tab_tempo[i] = get_position(push_swap, push_swap->stack_a.tab_a[i]);
 		i++;
 	}
 	i = 0;
-	while (i < push_swap->stack_a.size_stack_A)
+	while (i < push_swap->stack_a.size_stack_a)
 	{
-		push_swap->stack_a.tab_A[i] = tab_tempo[i];
+		push_swap->stack_a.tab_a[i] = tab_tempo[i];
 		i++;
 	}
+	free(tab_tempo);
 	return ;
 }
 
@@ -39,9 +47,9 @@ int	get_position(t_push_swap *push_swap, int tempo)
 
 	j = 0;
 	ret = 1;
-	while (j < push_swap->stack_a.size_stack_A)
+	while (j < push_swap->stack_a.size_stack_a)
 	{
-		if (tempo > push_swap->stack_a.tab_A[j])
+		if (tempo > push_swap->stack_a.tab_a[j])
 			ret++;
 		j++;
 	}

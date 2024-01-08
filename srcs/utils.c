@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:50:40 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 17:43:23 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 18:46:51 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,8 @@ int	next_nbr(char *str, int i)
 
 void	free_tabs(t_push_swap *push_swap)
 {
-	free(push_swap->stack_a.tab_A);
-	free(push_swap->stack_b.tab_B);
+	free(push_swap->stack_a.tab_a);
+	free(push_swap->stack_b.tab_b);
 	msg_error_exit();
 	return ;
 }

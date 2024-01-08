@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 11:45:38 by lucasbirlou       #+#    #+#             */
-/*   Updated: 2024/01/08 10:56:47 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 18:47:17 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	two_nbr_in_str_2(t_push_swap *push_swap, char *str, int counter)
 		return (-1);
 	if (counter > 1)
 	{
-		push_swap->stack_a.size_stack_A = counter;
+		push_swap->stack_a.size_stack_a = counter;
 		return (1);
 	}
 	return (-1);

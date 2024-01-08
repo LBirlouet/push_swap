@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:49:03 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 18:38:34 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/08 18:47:17 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ int	main(int argc, char **argv)
 	
 	/*VERIF*/
 	int v = 0;
-	while (v < push_swap.stack_a.size_stack_A)
+	while (v < push_swap.stack_a.size_stack_a)
 	{
-		printf("|%d|", push_swap.stack_a.tab_A[v]);
+		printf("|%d|", push_swap.stack_a.tab_a[v]);
 		v++;
 	}
 	printf("\n");
@@ -37,9 +37,9 @@ int	main(int argc, char **argv)
 
 		/*VERIF*/
 	v = 0;
-	while (v < push_swap.stack_a.size_stack_A)
+	while (v < push_swap.stack_a.size_stack_a)
 	{
-		printf("|%d|", push_swap.stack_a.tab_A[v]);
+		printf("|%d|", push_swap.stack_a.tab_a[v]);
 		v++;
 	}
 	printf("\n");
@@ -53,16 +53,16 @@ int	main(int argc, char **argv)
 	/*VERIF*/
 	v = 0;
 	printf("A|");
-	while (v < push_swap.stack_a.size_stack_A)
+	while (v < push_swap.stack_a.size_stack_a)
 	{
-		printf("%d|", push_swap.stack_a.tab_A[v]);
+		printf("%d|", push_swap.stack_a.tab_a[v]);
 		v++;
 	}
 	v = 0;
 	printf("\nB|");
-	while (v < push_swap.stack_b.size_stack_B)
+	while (v < push_swap.stack_b.size_stack_b)
 	{
-		printf("%d|", push_swap.stack_b.tab_B[v]);
+		printf("%d|", push_swap.stack_b.tab_b[v]);
 		v++;
 	}
 	/*FIN VERIF*/
