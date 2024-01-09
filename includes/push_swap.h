@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
+/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 18:47:53 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/09 19:06:40 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,9 @@ void	parsing_stack(t_push_swap *push_swap);
 /*index_stack*/
 void	index_stack(t_push_swap *push_swap);
 int		get_position(t_push_swap *push_swap, int i);
+
+/*verify_order*/
+void	order_verif(t_push_swap *push_swap);
 
 /*moves*/
 void	sa(t_push_swap *push_swap);

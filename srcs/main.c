@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
+/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:49:03 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 18:47:17 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/09 19:08:22 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int argc, char **argv)
 	/*FIN VERIF*/
 	
 	index_stack(&push_swap);
-
+	order_verif(&push_swap);
 	
 
 		/*VERIF*/

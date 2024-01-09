@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
+#    By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/08 18:37:18 by lbirloue         ###   ########.fr        #
+#    Updated: 2024/01/09 19:01:15 by lucasbirlou      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRCS			=	srcs/main.c \
 					srcs/parsing_stack.c \
 					srcs/index_stack.c \
 					srcs/utils.c \
+					srcs/verify_order.c \
 					srcs/parsing_arg/arg_parsing.c \
 					srcs/parsing_arg/utils_parsing.c \
 					srcs/moves/sa.c \
