@@ -6,7 +6,7 @@
 /*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 18:59:44 by lucasbirlou       #+#    #+#             */
-/*   Updated: 2024/01/09 19:12:26 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/09 19:12:47 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	order_verif(t_push_swap *push_swap)
 	if (verif - 1 == push_swap->stack_a.size_stack_a)
 	{
 		free(push_swap->stack_a.tab_a);
-		free(push_swap->stack_a.tab_b);
+		free(push_swap->stack_b.tab_b);
 		exit (0);
 	}
 	return ;
