@@ -6,7 +6,7 @@
 /*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/09 19:06:40 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/13 21:43:34 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ void	parsing_more_argv(char **argv);
 int		ft_strlen(char *str);
 ssize_t	ft_conv_char_int(char *str, ssize_t ret);
 int		next_nbr(char *str, int i);
-void	free_tabs(t_push_swap *push_swap);	
+void	free_tabs(t_push_swap *push_swap);
+void	free_exit(t_push_swap *push_swap);
 
 /*utils_parsing*/
 int		two_nbr_in_str(t_push_swap *push_swap, char *str, int counter, int i);
@@ -91,5 +92,9 @@ void	pa(t_push_swap *push_swap);
 void	ra(t_push_swap *push_swap);
 void	rb(t_push_swap *push_swap);
 void	rr(t_push_swap *push_swap);
+
+void	rra(t_push_swap *push_swap);
+void	rrb(t_push_swap *push_swap);
+void	rrr(t_push_swap *push_swap);
 
 #endif

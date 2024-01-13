@@ -6,7 +6,7 @@
 /*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:49:03 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/09 19:08:22 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/13 21:40:38 by lucasbirlou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,10 @@ int	main(int argc, char **argv)
 	printf("\n");
 	/*FIN VERIF*/
 
-	
-	pb(&push_swap);
-	pb(&push_swap);
-	rr(&push_swap);
-	
+
+
+
+ 	
 	/*VERIF*/
 	v = 0;
 	printf("A|");
@@ -66,5 +65,6 @@ int	main(int argc, char **argv)
 		v++;
 	}
 	/*FIN VERIF*/
+	free_exit(&push_swap);
 	return (0);
 }
