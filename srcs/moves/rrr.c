@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rrr.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
+/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 20:23:13 by lucasbirlou       #+#    #+#             */
-/*   Updated: 2024/01/13 21:32:56 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/15 13:28:20 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	rrr(t_push_swap *push_swap)
 {
 	int	tempo;
-	int size;
+	int	size;
 
 	size = push_swap->stack_a.size_stack_a - 1;
 	tempo = push_swap->stack_a.tab_a[size];
@@ -25,7 +25,7 @@ void	rrr(t_push_swap *push_swap)
 		size--;
 	}
 	push_swap->stack_a.tab_a[0] = tempo;
-    size = push_swap->stack_b.size_stack_b - 1;
+	size = push_swap->stack_b.size_stack_b - 1;
 	tempo = push_swap->stack_b.tab_b[size];
 	while (size > 0)
 	{
@@ -34,5 +34,5 @@ void	rrr(t_push_swap *push_swap)
 	}
 	push_swap->stack_b.tab_b[0] = tempo;
 	write (1, "rrr\n", 4);
-    return ;
+	return ;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rrb.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
+/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 20:23:20 by lucasbirlou       #+#    #+#             */
-/*   Updated: 2024/01/13 21:32:17 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/15 13:28:08 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	rrb(t_push_swap *push_swap)
 {
 	int	tempo;
-	int size;
+	int	size;
 
 	size = push_swap->stack_b.size_stack_b - 1;
 	tempo = push_swap->stack_b.tab_b[size];
@@ -26,5 +26,5 @@ void	rrb(t_push_swap *push_swap)
 	}
 	push_swap->stack_b.tab_b[0] = tempo;
 	write (1, "rrb\n", 4);
-    return ;
+	return ;
 }

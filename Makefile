@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+         #
+#    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/13 20:33:07 by lucasbirlou      ###   ########.fr        #
+#    Updated: 2024/01/15 09:36:18 by lbirloue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,10 @@ SRCS			=	srcs/main.c \
 					srcs/moves/rrb.c \
 					srcs/moves/rrr.c \
 					srcs/error_msg.c \
+					srcs/simple_sort.c \
+					srcs/utils_sort.c \
+					srcs/radix.c \
+
 
 FT_PRINTF		=	libftprintf.a
 

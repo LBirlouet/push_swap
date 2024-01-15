@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   verify_order.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
+/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 18:59:44 by lucasbirlou       #+#    #+#             */
-/*   Updated: 2024/01/09 19:12:47 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/15 13:27:41 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	order_verif(t_push_swap *push_swap)
 			break ;
 		i++;
 	}
-	printf("verif == %d || size_stack == %d\n", verif - 1, push_swap->stack_a.size_stack_a);
 	if (verif - 1 == push_swap->stack_a.size_stack_a)
 	{
 		free(push_swap->stack_a.tab_a);
