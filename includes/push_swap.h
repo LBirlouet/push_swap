@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/29 10:53:55 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/29 13:22:07 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,15 @@ void	sa(t_push_swap *push_swap);
 void	sb(t_push_swap *push_swap);
 void	ss(t_push_swap *push_swap);
 void	pb(t_push_swap *push_swap);
+void	pb_a(t_push_swap *push_swap);
+void	pb_a2(t_push_swap *push_swap);
+void	pb_b(t_push_swap *push_swap);
+void	pb_b2(t_push_swap *push_swap);
 void	pa(t_push_swap *push_swap);
+void	pa_b(t_push_swap *push_swap);
+void	pa_b2(t_push_swap *push_swap);
+void	pa_a(t_push_swap *push_swap);
+void	pa_a2(t_push_swap *push_swap);
 void	ra(t_push_swap *push_swap);
 void	rb(t_push_swap *push_swap);
 void	rr(t_push_swap *push_swap);
