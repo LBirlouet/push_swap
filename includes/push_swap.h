@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:48:05 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/15 13:29:15 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/29 10:53:55 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,13 @@
 
 typedef struct s_stack_a {
 	int	*tab_a;
+	int	*stack_a_tempo;
 	int	size_stack_a;
 }				t_stack_a;
 
 typedef struct s_stack_b {
 	int	*tab_b;
+	int	*stack_b_tempo;
 	int	size_stack_b;
 }				t_stack_b;
 
@@ -85,5 +87,6 @@ int		pos_max_in_stack_a(t_push_swap *push_swap);
 int		pos_min_in_stack_b(t_push_swap *push_swap);
 void	ft_radix(t_push_swap *push_swap);
 void	ft_radix_b(t_push_swap *push_swap, int bit_max, int i);
+void	free_all(t_push_swap *push_swap);
 
 #endif

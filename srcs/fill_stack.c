@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 08:59:47 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/29 09:57:03 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/29 10:58:47 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void	fill_zero(t_push_swap *push_swap)
 		// push_swap->stack_b.tab_b[size] = 0;
 		size--;
 	}
-	// push_swap->stack_b.size_stack_b = 0;
+	push_swap->stack_b.size_stack_b = 0;
 	return ;
 }
 
