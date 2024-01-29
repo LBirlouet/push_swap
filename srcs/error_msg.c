@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 11:29:16 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/08 10:22:29 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/25 08:16:57 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	msg_error_exit(void)
 {
 	write (2, "Error\n", 6);
-	exit (0);
+	exit (EXIT_FAILURE);
 }

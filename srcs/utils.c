@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucasbirlouer <lucasbirlouer@student.42    +#+  +:+       +#+        */
+/*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:50:40 by lbirloue          #+#    #+#             */
-/*   Updated: 2024/01/13 21:43:18 by lucasbirlou      ###   ########.fr       */
+/*   Updated: 2024/01/25 08:16:41 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,5 @@ void	free_exit(t_push_swap *push_swap)
 {
 	free(push_swap->stack_a.tab_a);
 	free(push_swap->stack_b.tab_b);
-	exit (1);
+	exit (EXIT_SUCCESS);
 }

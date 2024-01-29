@@ -6,7 +6,7 @@
 /*   By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 18:59:44 by lucasbirlou       #+#    #+#             */
-/*   Updated: 2024/01/15 13:27:41 by lbirloue         ###   ########.fr       */
+/*   Updated: 2024/01/25 08:17:11 by lbirloue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	order_verif(t_push_swap *push_swap)
 	{
 		free(push_swap->stack_a.tab_a);
 		free(push_swap->stack_b.tab_b);
-		exit (0);
+		exit (EXIT_FAILURE);
 	}
 	return ;
 }
