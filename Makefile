@@ -6,7 +6,7 @@
 #    By: lbirloue <lbirloue@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/16 17:45:56 by lbirloue          #+#    #+#              #
-#    Updated: 2024/01/15 09:36:18 by lbirloue         ###   ########.fr        #
+#    Updated: 2024/01/29 14:22:18 by lbirloue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,12 +47,13 @@ FT_PRINTF		=	libftprintf.a
 
 FT_PRINTF_PATH	=	ft_printf
 
-OBJ_DIR			=	objets
+OBJ_DIR			=	objects
+
 OBJS			=	$(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 
-${OBJ_DIR}/%.o : %.c
+${OBJ_DIR}/%.o : %.c 
 	@mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@ > /dev/null 2>&1 && printf "\e[1;32m.\e[0m" || printf "\e[1;31m\e[0m"
 
 all : $(OBJ_DIR) $(NAME)
 
@@ -60,19 +61,19 @@ $(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
 
 $(NAME) : $(OBJS) ${FT_PRINTF}
-	$(CC) $(OBJS) $(CFLAGS) -o ${NAME} ${FT_PRINTF}
+	@$(CC) $(OBJS) $(CFLAGS) -o ${NAME} ${FT_PRINTF} > /dev/null 2>&1 && printf "\e[1;32m.\e[0m" || printf "\e[1;31m\e[0m"
 
 ${FT_PRINTF}:
-	${MAKE} -C ${FT_PRINTF_PATH}
-	mv ${FT_PRINTF_PATH}/${FT_PRINTF} .
+	@${MAKE} -C ${FT_PRINTF_PATH} > /dev/null 2>&1 && printf "\e[1;32m.\e[0m" || printf "\e[1;31m\e[0m"
+	@mv ${FT_PRINTF_PATH}/${FT_PRINTF} . > /dev/null 2>&1 && printf "\e[1;32m.\e[0m" || printf "\e[1;31m\e[0m"
 
 clean:
-	rm -rf $(OBJ_DIR)
-	${MAKE} clean -C ${FT_PRINTF_PATH}
-	${RM} ${FT_PRINTF}
+	@rm -rf $(OBJ_DIR) > /dev/null 2>&1 && printf "\033[1;31m.\033[0m"
+	@${MAKE} clean -C ${FT_PRINTF_PATH} > /dev/null 2>&1 && printf "\033[1;31m.\033[0m"
+	@${RM} ${FT_PRINTF} > /dev/null 2>&1 && printf "\033[1;31m.\033[0m"
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME) > /dev/null 2>&1 && printf "\033[1;31m.\033[0m"
 
 re: fclean all
 
